@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap');
+
+$purple-light: #7550F9;
+$like-a-peach: #F97550;
+$purple-dark: #2D06B4;
+$this-time-font: 'Baloo Chettan 2', cursive;
+
+.App {
+    background: linear-gradient(45deg, $like-a-peach, $purple-light);
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    font-family: $this-time-font;
+    color: $purple-dark;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 0px 0px 15px ivory;
+}
+
+#display {
+    min-width: 150px;
+    min-height: 50px;
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid rgba($color: white, $alpha: 0.5);
+    background-color: rgba($color: white, $alpha: 0.4);
+    border-radius: 5px;
+}
+
+.music-board {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+    grid-gap: 5px;
+    margin: 20px;
+}
+
+.drum-pad {
+    background-color: rgba($color:white, $alpha: 0.2);
+    font-size: 30px;
+    color: $purple-dark;
+    font-family: $this-time-font;
+}
+
+.drum-pad:hover {
+    background-color: rgba($color:white, $alpha: 0.5);
+}
